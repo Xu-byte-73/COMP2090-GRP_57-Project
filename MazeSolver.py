@@ -79,5 +79,6 @@ print(solver.move())
 
 for row in range(19): #print final gameboard
     for column in range(19):
-        print(f'{gameboard[row][column]:<5}', end = '')
+        output = gameboard[row][column] if gameboard[row][column] >= 2 else '☆'
+        print(f'{output:<5}', end = '')
     print('\n')
