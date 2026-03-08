@@ -20,7 +20,7 @@ Here are a experimental **19*19 maze** and the preliminary running output for th
 ## 2. Design
 This section introduces the main algorithms, data structures, and OOP deisign of this project.
 ### Algorithm
-- DFS
+- DFS (backtracking)
 - BFS
 - Greedy
 - A*
