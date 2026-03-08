@@ -11,6 +11,9 @@ Here's a preliminary running output for the maze below, where 10s represent wall
 
 ☆☆Current code please refer to MazeSolver.py☆☆
 
+<img width="1082" height="1184" alt="image" src="https://github.com/user-attachments/assets/5aa9c3b5-7158-4960-88f7-5056140bb5fb" />
+
+
 <img width="1508" height="1324" alt="image" src="https://github.com/user-attachments/assets/4a8bc672-86c9-47c9-abf6-d889eab73c4e" />
 
 ## 2. Design
