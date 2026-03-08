@@ -7,7 +7,7 @@ The system can automatically generate random mazes and find a path from the star
 
 The project combines algorithms, custom data structures, user interaction, and OOP design to form a complete and modular system. 
 
-Here's a preliminary running output, where 10s represent walls and other numbers represent path travel times (floating numbers indicate existances of intersections)
+Here's a preliminary running output for the maze below, where 10s represent walls and other numbers represent path travel times (floating numbers indicate existances of intersections)
 
 ☆☆Current code please refer to MazeSolver.py☆☆
 
