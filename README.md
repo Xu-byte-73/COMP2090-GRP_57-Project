@@ -7,6 +7,9 @@ The system can automatically generate random mazes and find a path from the star
 
 The project combines algorithms, custom data structures, user interaction, and OOP design to form a complete and modular system. 
 
+Here's a preliminary running output
+<img width="1508" height="1324" alt="image" src="https://github.com/user-attachments/assets/4a8bc672-86c9-47c9-abf6-d889eab73c4e" />
+
 ## 2. Design
 This section introduces the main algorithms, data structures, and OOP deisign of this project.
 ### Algorithm
@@ -27,5 +30,5 @@ Detained explanations will be updated after the development phase is completed.
 
 
 ## 4. Troubleshooting
-This section lists common issues users may encounter and providespossible solutions. 
+This section lists common issues users may encounter and provides possible solutions. 
 Detained explanations will be updated after the development phase is completed.
