@@ -1,7 +1,5 @@
 # Interactive Maze Generator and Solver
 
-# Interactive Maze Generator and Solver
-
 ## 1. Introduction
 This project provides a simple interactive maze application with a graphical interface. You can generate random mazes, solve them using different algorithms, and reset the maze with one click. The program uses **backtracking (DFS)** as the main solving algorithm, along with BFS and Trémaux’s method for comparison.
 
