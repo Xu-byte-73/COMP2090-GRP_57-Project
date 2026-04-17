@@ -1,41 +1,30 @@
 # Interactive Maze Generator and Solver
 
+# Interactive Maze Generator and Solver
+
 ## 1. Introduction
-This project aims to build a interactive maze system that combines maze generation, automated solving algorithms and a player-controlled mode.
-
-The system can automatically generate random mazes and find a path from the start to the end with different algorithms, such as Depth-First Search, Breadth-First Search and Greedy Best-First Search. After finishing, the system analyzes the player's movenment patterns and provides a simple estimation of which algorithm the player's strategy most closely resembles.
-
-The project combines algorithms, custom data structures, user interaction, and OOP design to form a complete and modular system. 
-
-Here are a experimental **19*19 maze** and the preliminary running output for the maze, where 10s represent walls, ☆ represents correct solution pathway and other numbers represent travel times of interruptive pathways (floating numbers indicate existances of intersections)
-
-☆☆Current code please refer to MazeSolver.py☆☆
-
-<img width="1082" height="1184" alt="image" src="https://github.com/user-attachments/assets/5aa9c3b5-7158-4960-88f7-5056140bb5fb" />
-
-
-<img width="1424" height="1300" alt="image" src="https://github.com/user-attachments/assets/c17862e7-37b1-4abd-942f-6d87fe118e50" />
-
+This project provides a simple interactive maze application with a graphical interface. You can generate random mazes, solve them using different algorithms, and reset the maze with one click. The program uses **backtracking (DFS)** as the main solving algorithm, along with BFS and Trémaux’s method for comparison.
 
 ## 2. Design
-This section introduces the main algorithms, data structures, and OOP deisign of this project.
-### Algorithm
-- DFS (backtracking)
-- BFS
-- Greedy
-- A*
-### Data Structure
-This section describes the custom data structures used in the project.
-Detained explanations will be updated after the development phase is completed.
-### OOP
-This section explains the object-oriented design of the system.
-Detained explanations will be updated after the development phase is completed.
+### Algorithms
+- **Backtracking (DFS)** – The primary solving algorithm. Explores each path until a dead end, then backtracks. Marks visited cells to avoid loops. Time complexity O(rows × cols).
+- **BFS** – Explores level by level; finds the shortest path.
+- **Trémaux’s algorithm** – Wall‑following with marking; at intersections, chooses the least‑visited direction.
+
+### Data Structures
+- **Stack** – Used explicitly in the iterative DFS solver.
+- **Queue** – Used in BFS.
+- **Union‑Find** – Used only for maze generation (Kruskal), not for solving.
+- **2D list** – Represents the maze grid.
+
+### OOP Design
+- **`Solver` (ABC)** – Abstract base class defining `move()`, `intersection()`, `show_path()`.
+- **`DFS_solver`, `BFS_solver`, `Trémaux_solver`** – Concrete subclasses.
+- **`Maze_generator`** – Generates mazes (randomized Kruskal).
+- **GUI** – Buttons for algorithm selection and a **Reset** button to generate a new maze.
 
 ## 3. Run Instructions
-This section provides instructions on how to install dependencies and run the program.
-Detained explanations will be updated after the development phase is completed.
-
-
-## 4. Troubleshooting
-This section lists common issues users may encounter and provides possible solutions. 
-Detained explanations will be updated after the development phase is completed.
+1. Ensure Python 3.7+ is installed.
+2. Run the main script:
+   ```bash
+   python main.py
